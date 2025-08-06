@@ -1,0 +1,138 @@
+/* === BASE HEADER STYLES (CLEANED UP) === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: transparent;
+  font-family: sans-serif;
+  transition: background-color 0.4s ease; /* Smooth transition for open state */
+}
+
+.header.header-scrolled {
+  background-color: rgba(20, 20, 20, 0.85); /* Your desired dark, semi-transparent background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a nice shadow */
+  backdrop-filter: blur(10px); /* Optional: frosted glass effect */
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* The height of your header is about 80px */
+  height: 45px; 
+}
+
+.logo img {
+  height: 50px;
+  display: block; /* Fixes potential small gaps below the image */
+}
+
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0; /* REMOVED margin-left: 500px */
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: orange;
+}
+
+.cta a.btn-join {
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid white;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.cta a.btn-join:hover {
+  background-color: #333;
+}
+
+
+/* === HAMBURGER MENU STYLES === */
+.hamburger-menu {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* === MEDIA QUERY FOR TABLET & MOBILE === */
+@media (max-width: 992px) {
+  /* Hide the desktop navigation and CTA button */
+  .nav, .cta {
+    display: none;
+  }
+  
+  /* Show the hamburger menu button */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Style the mobile navigation menu */
+  .header.nav-open .nav {
+    display: flex;
+    position: absolute;
+    top: 80px; /* Position below the header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px); /* Full screen height minus header */
+    background-color: #052b66;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header.nav-open .nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .header.nav-open .nav a {
+    font-size: 20px; /* Make links bigger for mobile */
+  }
+
+  /* Animate hamburger to an 'X' when menu is open */
+  .header.nav-open .hamburger-menu .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header.nav-open .hamburger-menu .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header.nav-open .hamburger-menu .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
