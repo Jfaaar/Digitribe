@@ -110,7 +110,7 @@ body {
   background-image: url(https://uploads-ssl.webflow.com/5f7495b690bdc9e4cdca742c/5f96e1c3ab8d629958b11fc9_grid.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 140vh;         
+  /* height: 140vh;          */
   width: 100%;
   display: flex;
   flex-direction: column;      
@@ -349,7 +349,7 @@ font-family: Nexa-light;
   flex-direction: column;
   justify-content: space-evenly;
   width: 50%;
-  height: 650px;
+  /* height: 650px; */
   padding: 20px;
   gap: 20px;
 }
@@ -375,7 +375,7 @@ font-family: Nexa-light;
 }
 
 .footer {
-  height: 22vh;
+  /* height: 22vh; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
