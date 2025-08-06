@@ -603,18 +603,313 @@ font-family: Nexa-light;
 
 
 
+/* === SECTION 4 === */
+
+  /* === MEDIA QUERIES FOR SECTION 4 === */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .core-wrapper {
+    /* Widen the content area for better text flow on tablets */
+    max-width: 70%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .section4 {
+    /* Allow the section's height to grow based on its content */
+    height: auto;
+    /* Add vertical padding for spacing */
+    padding: 100px 20px;
+  }
+
+  .core-wrapper {
+    /* Widen the content area to use most of the mobile screen */
+    max-width: 90%;
+  }
+
+  .our-core h1 {
+    font-size: 32px; /* Reduce font size for mobile */
+  }
+
+  /* Set a base font size for the h2 and bold text for better control */
+  .our-core h2, .core-bold-text {
+    font-size: 18px;
+  }
+
+  /* As before, hide the decorative background images on mobile */
+  .img-abs, .img-abs2 {
+    display: none;
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  .section4 {
+    padding: 80px 20px; /* Slightly reduce padding */
+  }
+
+  .our-core h1 {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .our-core h2, .core-bold-text {
+    font-size: 16px;
+  }
+}
+
+/* === SECTION 4 END=== */
+
+/* === SECTION 5 === */
+
+  /* === MEDIA QUERIES FOR SECTION 5 === */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .inspiration {
+    /* Widen the content area for better readability on tablets */
+    width: 70%;
+  }
+
+  .inspiration p {
+    font-size: 22px; /* Slightly reduce paragraph font size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .section5 {
+    /* Allow the section's height to grow with the content */
+    height: auto;
+    /* Add vertical padding for spacing */
+    padding: 100px 20px;
+  }
+
+  .inspiration {
+    /* Widen the content area for mobile */
+    width: 90%;
+    height: auto; /* Let height be determined by content */
+  }
+
+  .inspiration h1 {
+    font-size: 32px; /* Reduce font size for mobile */
+  }
+
+  .inspiration p {
+    font-size: 18px; /* Reduce paragraph font size for mobile */
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  .section5 {
+    padding: 80px 20px; /* Slightly reduce padding */
+  }
+
+  .inspiration h1 {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .inspiration p {
+    font-size: 16px;
+  }
+}
+
+/* === SECTION 5 END === */
 
 
+/* === SECTION 6  === */
+
+  /* === MEDIA QUERIES FOR SECTION 6 === */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .experience {
+    /* Widen the content area for tablets */
+    width: 70%;
+  }
+
+  .experience h1 {
+    font-size: 36px;
+  }
+  
+  .experience p {
+    font-size: 22px; /* Slightly reduce paragraph font size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .section6 {
+    /* Allow the section's height to grow with the content */
+    height: auto;
+    /* Add vertical padding for spacing */
+    padding: 100px 20px;
+  }
+
+  .experience {
+    /* Widen the content area for mobile */
+    width: 90%;
+    height: auto; /* Let height be determined by content */
+  }
+
+  .experience h1 {
+    font-size: 32px; /* Reduce font size for mobile */
+  }
+
+  .experience p {
+    font-size: 18px; /* Reduce paragraph font size for mobile */
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  .section6 {
+    padding: 80px 20px; /* Slightly reduce padding */
+  }
+
+  .experience h1 {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .experience p {
+    font-size: 16px;
+  }
+}
+
+/* === SECTION 6 END === */
 
 
+/* === SECTION 7 form  === */
+
+  /* === MEDIA QUERIES FOR SECTION 7 === */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .touch-wrapper,
+  .form-wrapper {
+    /* Widen the content and form for tablets */
+    width: 75%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .section7 {
+    /* Set height to auto and control spacing with padding */
+    height: auto;
+    padding: 80px 20px; 
+  }
+
+  .touch-wrapper {
+    /* Make the heading block take up more space */
+    width: 90%;
+    margin-top: 0; /* Remove the large top margin */
+    margin-bottom: 30px;
+  }
+  
+  .touch-wrapper h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .touch-wrapper p {
+    font-size: 16px;
+  }
+
+  .form-wrapper {
+    /* Widen the form and let its height be flexible */
+    width: 90%;
+    height: auto;
+    padding: 0; /* Remove padding if the parent section has it */
+  }
+
+  .form-wrapper label {
+    font-size: 15px;
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  .touch-wrapper,
+  .form-wrapper {
+    /* Use 100% width on small screens for the best experience */
+    width: 100%;
+  }
+
+  .touch-wrapper h1 {
+    font-size: 26px;
+  }
+
+  .form-wrapper label {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+/* === SECTION 7 form END  === */
 
 
+/* === Footer === */
 
+  /* === MEDIA QUERIES FOR SECTION 8 (FOOTER) === */
 
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+  .section8 {
+    /* Allow height to be determined by content and add padding */
+    height: auto;
+    padding: 60px 0 40px 0;
+  }
+  
+  .footer {
+    /* Stack the footer columns vertically */
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Add space between the stacked blocks */
+    height: auto;
+  }
 
+  .footer-block {
+    /* Make each block wider and center its text */
+    width: 80%;
+    text-align: center;
+    margin-top: 0; /* Remove the top margin */
+    height: auto;
+  }
 
+  .line {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 
+  .more-info {
+    /* Stack the copyright and social icons */
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  .footer-block {
+    width: 90%; /* Use even more width on small screens */
+  }
+
+  .footer-block h4 {
+    font-size: 18px;
+  }
+  
+  .footer-block p {
+    font-size: 15px;
+  }
+
+.all-right h2 {
+    font-size: 12px;
+  }
+}
+/* === Footer End === */ 
 
 /* 1200px et moins */
 /* @media (max-width: 1200px) {

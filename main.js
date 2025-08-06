@@ -1,10 +1,30 @@
    //header script
 
-   const header = document.querySelector('.header');
-   const hamburgerMenu = document.querySelector('.hamburger-menu');
-   hamburgerMenu.addEventListener('click', () => {
-   header.classList.toggle('nav-open');
-   });
+//    const header = document.querySelector('.header');
+//    const hamburgerMenu = document.querySelector('.hamburger-menu');
+//    hamburgerMenu.addEventListener('click', () => {
+//    header.classList.toggle('nav-open');
+//    });
+
+     // Select all the necessary elements
+  const header = document.querySelector('.header');
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  // Logic to toggle the menu with the hamburger button
+  hamburgerMenu.addEventListener('click', () => {
+    header.classList.toggle('nav-open');
+  });
+
+  // NEW: Logic to close the menu when a nav link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // If the menu is open, remove the 'nav-open' class to close it
+      if (header.classList.contains('nav-open')) {
+        header.classList.remove('nav-open');
+      }
+    });
+  });
 
    //header script fin
 
