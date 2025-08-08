@@ -147,6 +147,7 @@ body {
 .video-hero {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .video-hero-container {
   transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(-11deg) rotateY(-14deg) rotateZ(6deg) skew(0deg, 0deg);

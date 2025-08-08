@@ -44,7 +44,7 @@
 
     let currentIndex = 0;
     let autoSlideInterval;
-    const slideIntervalTime = 5000; // Time in ms (5 seconds)
+    const slideIntervalTime = 3000; // Time in ms (5 seconds)
     const dots = [];
 
     // --- INITIALIZATION ---
